@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>One Page Shopping Mall</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+            font-family: 'Hi Melody', cursive;
+        }
+
+        .warp {
+            width: 400px;
+            margin: 300px auto;
+            border: solid black;
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        .card-img-top {
+            width: 400px;
+        }
+
+        h1, h5 { /*  이해가 안가요..*/
+            display: inline;
+        }
+
+        .order_button { /*버튼을 가운데 놓고 싶은데 안되요..*/
+
+            margin: auto 100px;
+            background-color: cornflowerblue;
+            margin-top: 20px;
+
+        }
+
+        .white-font {
+            color: white;
+        }
+
+
+        .table {
+            text-align: left;
+        }
+
+        .client_count{
+            width: 302px;
+        }
+    </style>
+    <script>
+        function sayHello() {
+            alert('주문이 완료되었습니다 ');
+        }
+    </script>
+</head>
+<body>
+<div class="warp">
+    <div class="card">
+        <img class="card-img-top"
+             src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQF5muH6piXfKA2yUyMkJwm0mJq6O4lU-1mFA&usqp=CAU"
+             alt="Card image cap">
+        <div class="card-body">
+            <div class="info">
+                <h1 class="card-title"> 고양이를 팝니다 </h1>
+                <h5 class="card-price"> 가격: 100만원 /마리 </h5>
+            </div>
+            <p class="card-text">이 고양이는 엄마 아빠가 순해서 사람을 잘 따르는 개냥이에요.
+                입양하시면 행복하실 거에요. 우리 냥이 빨리 좋은 엄마 아빠 만났으면 좋겠네요.</p>
+        </div>
+    </div>
+
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col"><span style="background-color: gainsboro">주문자 성함 : </span></th>
+            <th scope="col"><input type="text" style="width: 302px"></th>
+        </tr>
+        <tr>
+            <th scope="col"><span style="background-color: gainsboro">수량 : </span></th>
+            <th scope="col"><input type="number" style="width: 302px"></th>
+
+
+        </tr>
+        <tr>
+            <th scope="col"><span style="background-color: gainsboro">주소 : </span></th>
+            <th scope="col"><input type="text" style="width: 302px"></th>
+        </tr>
+
+        <tr>
+            <th scope="col"><span style="background-color: gainsboro">전화번호 : </span></th>
+            <th scope="col"><input type="text" style="width: 302px"></th>
+        </tr>
+
+    </table>
+    <div class="order_btn.">
+        <button class="order_button" onclick="sayHello()">
+            <h5 class="white-font"> 주문하기</h5>
+        </button>
+    </div>
+</div>
+
+</body>
+</html>
